@@ -8,3 +8,14 @@ I want to learn Front-End Development in RSSchool!
 * Git/GitHub
 * HTML
 * CSS
+# **Code Examples**
+```
+function truncate(str, maxlength) {
+  let newStr;
+  if (str.length > maxlength) {
+ newStr = str.slice(0, maxlength - 3) + "...";
+ return newStr;
+  }
+  return str;
+}
+```

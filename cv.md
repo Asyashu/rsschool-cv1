@@ -19,3 +19,9 @@ function truncate(str, maxlength) {
   return str;
 }
 ```
+# **Experience**
+* Nothing yet…
+# **Education**
+* Belarusian State Technological University
+# **Languages**
+* English - A2

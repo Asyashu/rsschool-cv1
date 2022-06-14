@@ -1,234 +1,173 @@
 :root {
-    --dark-gray-color: #505050;
-    --ligth-gray-color: #777777;
-    --pink-color: #ffd6d2;
-  }
+  --dark-blue-color: #106c97;
+  --ligth-grey-color: #777e77;
+  --blue-color: #d2efff;
+  --light-green-color: #d0e7cf;
+}
   
-  body {
-    box-sizing: border-box;
-    background-color: #f5f5f5;
-  }
+body {
+  box-sizing: border-box;
+  background-color: #d1b1b5;
+}
 
 .cv-centered {
-    margin: 20px auto;
-    width: 1024px;
-    font-family: "Cabin", sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    background-color: #ffffff;
-    box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.23);
+  margin: 20px auto;
+  width: 1024px;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 40px -1px rgba(44, 34, 34, 0.53);
+}
+
+.header-menu {
+  height: 40px;
+  font-weight: 700;
+  background-color: var(--light-green-color);
+  font-size: 14px;
+}
+
+.header-menu__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.header-menu__item {
+  display: inline;
+ 
+}
+
+.header-menu__link {
+  color: var(--dark-blue-color);
+  text-align: center;
+  padding: 10px 21.8px;
+  text-decoration: none;
+  border: 1px solid #ffffff;
 }
 
 .two-columns {
-    display: flex;
-  }
+  display: flex;
+}
 
 .left-column {
-    width: 42%;
-    color: var(--dark-gray-color);
-    background-color: var(--pink-color);
-  }
+  width: 45%;
+  color: var(--dark-blue-color);
+  background-color: var(--blue-color);
+}
   
-  .right-column {
-    width: 58%;
-    padding: 40px;
-  }
+.right-column {
+  width: 55%;
+  padding: 40px;
+}
 
-  header {
-    padding: 30px;
-    text-align: center;
-    background-color: #ffffff;
-  }
+header {
+  padding: 30px;
+  text-align: center;
+  background-color: #ffffff;
+}
   
-  header img {
-    margin-bottom: 10px;
-    border: 10px solid var(--pink-color);
-    border-radius: 50%;
-  }
+header img {
+  margin: 20px;
+  border: 5px solid var(--blue-color);
+}
   
-  header h1 {
-    margin-bottom: 10px;
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.1;
-    text-transform: uppercase;
-    letter-spacing: 7px;
-  }
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
   
-  header h2 {
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-  }
+header h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
   
-  main {
-    padding: 0 40px;
-  }
+main {
+  padding: 80px 20px;
+}
   
-  main h3 {
-    width: 136px;
-    margin: 40px auto 20px;
-    padding: 5px 20px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #ffffff;
-    background-color: var(--dark-gray-color);
-  }
+main h3 {
+  width: 136px;
+  margin: 40px auto 20px;
+  padding: 5px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background-color: var(--dark-blue-color);
+}
+   
+main li {
+  margin-bottom: 10px;
+}
   
-  main .contacts h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    transform: translate(0, -50%);
-  }
+.contacts li img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
   
-  main li {
-    margin-bottom: 10px;
-  }
+.contacts li p {
+  display: inline;
+  vertical-align: middle;
+}
   
-  .contacts li img {
-    vertical-align: middle;
-    margin-right: 15px;
-  }
+.right-column .sub-header {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
   
-  .contacts li p {
-    display: inline;
-    vertical-align: middle;
-  }
+.right-column .about-myself .sub-header .code-example{
+  margin-top: 150px;
+}
+    
+.right-column h3 {
+  flex: 1;
+  vertical-align: middle;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ligth-grey-color);
+  border-bottom: 2px solid var(--ligth-grey-color);
+}
   
-  .contacts a {
-    text-decoration: none;
-    color: var(--dark-gray-color);
-  }
+.right-column p {
+  color: var(--ligth-grey-coloror);
+  margin-left: 10px;
+}
+   
+pre {
+  text-align: left;
+  font-family: monospace;
+  font-size: 0.9rem;
+  background-color: #f5f5f5;
+}
   
-  main :not(.contacts) ul {
-    list-style-type: disc;
-    margin-left: 50px;
-  }
-
-  .header-menu__list {
-    list-style: none; 
-    margin: 0; 
-    padding-left: 0;
-  }
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: var(--dark-blue-color);
+}
   
-   .header-menu__link {
-    text-decoration: none;
-   }
-
-  .header-menu {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    background-color: #e4f0f0;
-    font-size: 18px;
-  }
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
   
-  .right-column .sub-header {
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 15px;
-  }
+footer .github-icon {
+  margin-right: 10px;
+}
   
-
-  .right-column .about-myself .sub-header {
-    margin-top: 0;
-  }
-  
-  .about-myself p {
-    margin-bottom: 10px;
-    margin-left: 45px;
-  }
-  
-  .about-myself p:last-of-type {
-    margin-bottom: 0;
-  }
-  
-  .right-column h3 {
-    flex: 1;
-    vertical-align: middle;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--ligth-gray-color);
-    border-bottom: 2px solid var(--ligth-gray-color);
-  }
-  
-  .right-column img {
-    vertical-align: middle;
-    margin-right: 15px;
-  }
-  
-  .right-column p {
-    color: var(--ligth-gray-color);
-  }
-  
-  .education p {
-    margin-left: 45px;
-  }
-  
-  .education p strong {
-    font-weight: 700;
-  }
-  
-  .experience ul {
-    list-style-type: disc;
-    margin-left: 45px;
-    margin-bottom: 30px;
-  }
-  
-  .experience li {
-    margin-bottom: 10px;
-    color: var(--ligth-gray-color);
-  }
-  
-  .right-column img.score-img {
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .code-example p {
-    margin-left: 45px;
-  }
-  
-  pre {
-    margin-left: 20px;
-    margin-top: 20px;
-    padding-left: 30px;
-    font-family: monospace;
-    font-size: 0.9rem;
-    background-color: #f5f5f5;
-  }
-  
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    font-size: 0.8rem;
-    color: #ffffff;
-    background-color: var(--dark-gray-color);
-  }
-  
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    font-size: 0.8rem;
-    color: #ffffff;
-    background-color: var(--dark-gray-color);
-  }
-  
-  footer a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-  
-  footer .github-icon {
-    margin-right: 10px;
-  }
-  
-  .my-github {
-    display: flex;
-    align-items: center;
-  }
+.my-github {
+  display: flex;
+  align-items: center;
+}
